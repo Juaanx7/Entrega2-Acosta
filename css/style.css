@@ -1,14 +1,68 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* TITULO */
+h1 {
+    font-size: 2rem;
+}
+
 /* TAMAÑO PARA EL LOGO EN NAV */
 .logoNav {
-    height: 30px; 
-    margin-right: 10px; 
-    vertical-align: middle; 
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* ESTILOS PARA LAS IMAGENES */
 .img {
     min-height: 200px;
     height: auto;
+}
+
+/* Media Queries*/
+
+/* Pantallas pequeñas (menor a 768px) */
+@media (max-width: 768px) {
+    .logoNav {
+        height: 20px;
+    }
+    h1 {
+        font-size: 1.5rem !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important; 
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Pantallas medianas (768px a 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .logoNav {
+        height: 25px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .container {
+        padding: 0 20px;
+    }
+}
+
+/* Pantallas grandes (mayor a 992px) */
+@media (min-width: 992px) {
+    .logoNav {
+        height: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
 }
 
 /* ESTILO PARA SOBRE NOSOTROS */
@@ -20,38 +74,39 @@
     padding: 50px;
     background-color: #f8f9fa;
     text-align: center;
-  }
-  
-  .contenedorImagenes {
+}
+
+.contenedorImagenes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    flex-wrap: nowrap; /* Evita que se pongan en columna en pantallas grandes */
+    flex-wrap: nowrap;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-  }
-  
-  .styleSobreNosotros {
-    flex: 1; /* La imagen ocupa un espacio proporcional dentro del contenedor */
-    max-width: 50%; /* Ajustamos el tamaño para que la imagen no sea demasiado grande */
+}
+
+.styleSobreNosotros {
+    flex: 1;
+    max-width: 50%;
     height: auto;
     border-radius: 8px;
-  }
-  
-  .textoSobreNosotros {
-    flex: 1; /* El texto también ocupa un espacio proporcional dentro del contenedor */
-    max-width: 50%; /* Ajustamos el tamaño del contenedor del texto */
+}
+
+.textoSobreNosotros {
+    flex: 1;
+    max-width: 50%;
     text-align: justify;
     color: #343a40;
     text-align: center;
-  } 
-  .textoSobreNosotros h2 {
-    font-size: 1.5rem; /* Ajusta el tamaño que prefieras */
+}
+
+.textoSobreNosotros h2 {
+    font-size: 1.5rem;
     color: #343a40;
-  }
+}
 
 /* ESTILO PARA DONDE ENCONTRARNOS */
 .contenedorImagenes {
@@ -60,29 +115,30 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    flex-wrap: nowrap; /* Evita que se pongan en columna en pantallas grandes */
+    flex-wrap: nowrap;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-  }
-  
-  .styleMapa {
-    flex: 1; /* La imagen del mapa ocupa un espacio proporcional dentro del contenedor */
-    max-width: 70%; /* Ajustamos el tamaño para que el mapa no sea demasiado grande */
-  }
-  
-  .styleUbicacion {
-    flex: 1; /* El texto también ocupa un espacio proporcional dentro del contenedor */
-    max-width: 40%; /* Ajustamos el tamaño del contenedor del texto */
+}
+
+.styleMapa {
+    flex: 1;
+    max-width: 70%;
+}
+
+.styleUbicacion {
+    flex: 1;
+    max-width: 40%;
     text-align: justify;
     color: #343a40;
-  }
-  
-  .styleUbicacion h2 {
+}
+
+.styleUbicacion h2 {
     font-size: 1.5rem;
     color: #343a40;
     text-align: center;
-  }  
-    .styleUbicacion {
+}
+
+.styleUbicacion {
     text-align: center;
-    }
+}
