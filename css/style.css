@@ -12,23 +12,77 @@
 }
 
 /* ESTILO PARA SOBRE NOSOTROS */
-.styleSobreNosotros{
-    display: inline-block;
-    width: 500px; 
-    height: auto; 
-    margin: 70px;
-}
+.contenedorSobreNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .contenedorImagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap; /* Evita que se pongan en columna en pantallas grandes */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .styleSobreNosotros {
+    flex: 1; /* La imagen ocupa un espacio proporcional dentro del contenedor */
+    max-width: 50%; /* Ajustamos el tamaño para que la imagen no sea demasiado grande */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .textoSobreNosotros {
+    flex: 1; /* El texto también ocupa un espacio proporcional dentro del contenedor */
+    max-width: 50%; /* Ajustamos el tamaño del contenedor del texto */
+    text-align: justify;
+    color: #343a40;
+    text-align: center;
+  } 
+  .textoSobreNosotros h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño que prefieras */
+    color: #343a40;
+  }
 
 /* ESTILO PARA DONDE ENCONTRARNOS */
-.styleUbicacion{
-    display: inline-block;
-    width: 500px; 
-    height: auto; 
-    margin: 70px;
-}
-.styleMapa{
-    display: inline-block;
-    width: 500px; 
-    height: 500px; 
-    margin: 70px;
-}
+.contenedorImagenes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap; /* Evita que se pongan en columna en pantallas grandes */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .styleMapa {
+    flex: 1; /* La imagen del mapa ocupa un espacio proporcional dentro del contenedor */
+    max-width: 70%; /* Ajustamos el tamaño para que el mapa no sea demasiado grande */
+  }
+  
+  .styleUbicacion {
+    flex: 1; /* El texto también ocupa un espacio proporcional dentro del contenedor */
+    max-width: 40%; /* Ajustamos el tamaño del contenedor del texto */
+    text-align: justify;
+    color: #343a40;
+  }
+  
+  .styleUbicacion h2 {
+    font-size: 1.5rem;
+    color: #343a40;
+    text-align: center;
+  }  
+    .styleUbicacion {
+    text-align: center;
+    }
